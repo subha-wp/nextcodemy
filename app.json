@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "nextCodemy",
+    "slug": "nextcodemy-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "becodemy",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080393"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nextcodemy.tutorial"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.nextcodemy.tutorial"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.500604689956-gv4jqon1uv37m2ieggd1ijr1jkrbblmt"
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "abcbac06-c3b5-4352-a294-13c55f510d3a"
+      }
+    }
+  }
+}
